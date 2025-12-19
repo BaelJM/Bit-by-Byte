@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bit by Byte | Arcade</title> 
+    <style>
+        :root {
+            --primary-orange: #ca5618;
+            --dark-blue: #0b0646;
+            --bg-light: #faf9f6;
+            --nav-bg: #d8dced;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: var(--bg-light);
+            font-family: 'Times New Roman', Times, serif;
+            color: var(--dark-blue);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 4px solid #dda045;
+            background-color: var(--nav-bg);
+            padding: 0 5%;
+            height: 90px;
+        }
+
+        #logo { width: 90px; }
+
+        .nav-links a {
+            margin-left: 30px;
+            text-decoration: none;
+            color: var(--dark-blue);
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        h4 {
+            font-size: 28px;
+            margin: 40px 0 20px 0;
+            text-align: left;
+            border-left: 5px solid var(--primary-orange);
+            padding-left: 15px;
+        }
+        
+        .arcade-window {
+            position: relative;
+            padding-bottom: 56.25%; 
+            height: 0;
+            overflow: hidden;
+            border-radius: 12px;
+            background: #000;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            border: 4px solid var(--dark-blue);
+        }
+
+        .arcade-window iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        .game-description {
+            margin: 15px 0 40px 0;
+            font-style: italic;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body> 
+    <header>
+        <nav class="navbar">
+            <img id="logo" src="logo3.png" alt="Logo">
+            <div class="nav-links">    
+                <a href="homepage.html">Home</a>
+                <a href="lesson.html">Lesson</a>
+                <a href="arcade.html">Arcade</a>
+            </div>
+        </nav>
+    </header> 
+
+    <main class="container">
+        <h1>The Bit Arcade</h1>
+        <p>Level up your skills with these interactive challenges</p>
+
+        <h4>1. Binary Bonanza</h4>
+        <div class="arcade-window">
+            <iframe src="https://games.penjee.com/binary-numbers-game/game.php" scrolling="no"></iframe>
+        </div>
+        <p class="game-description">Goal: Convert decimal numbers to binary to clear the blocks!</p>
+
+        <h4>2. Hardware Component Match</h4>
+        <div class="arcade-window">
+            <iframe src="https://wordwall.net/embed/731/852/456" scrolling="no" allowfullscreen></iframe>
+        </div>
+        <p class="game-description">Goal: Drag the labels to the correct computer hardware parts.</p>
+
+        <h4>3. Logic Gate Lab</h4>
+        <div class="arcade-window">
+            <iframe src="https://academo.org/demos/logic-gate-simulator/" style="background: white;"></iframe>
+        </div>
+        <p class="game-description">Goal: Experiment with AND, OR, and NOT gates to see how signals flow.</p>
+
+        <a href="lesson.html" style="color: var(--primary-orange); font-weight: bold; text-decoration: none; font-size: 20px;">Back to Lessons</a>
+    </main>
+</body>
+</html>

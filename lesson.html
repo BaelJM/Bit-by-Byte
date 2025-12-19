@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bit by Byte | Lesson</title>
+
+    <style>
+        :root {
+            --primary-orange: #ca5618;
+            --dark-blue: #0b0646;
+            --bg-light: #faf9f6;
+            --nav-bg: #d8dced;
+        }
+
+        body {
+            font-family: 'Times New Roman', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-light);
+            margin: 0;
+            line-height: 1.6;
+            padding-bottom: 100px;
+        }
+
+        p{
+            font-size: 18px;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #d8dced;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            height: 97px;
+            padding: 0 5%;
+        }
+
+        .logo img {
+           width: 90px;
+           height: auto;
+        }
+
+        .nav-links a {
+            margin-left: 30px;
+            font-size: 19px;
+            color: var(--dark-blue);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-orange);
+        }
+      
+        .full-banner {
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+            margin: 0 0 40px 0; 
+        }
+
+        .full-banner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        img.content-img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            margin: 30px 0;
+            transition: transform 0.3s ease;
+        }
+
+        section {
+            margin-bottom: 80px;
+        }
+
+        @supports (animation-timeline: view()) {
+            .scroll-anim {
+                opacity: 0;
+                transform: translateY(50px);
+                animation: fadeUp linear forwards;
+                animation-timeline: view();
+                animation-range: entry 10% cover 30%;
+            }
+        }
+
+        @keyframes fadeUp {
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h1 { font-size: 3rem; color: var(--dark-blue); text-align: center; margin-top: 40px; }
+        h3 { font-size: 1.8rem; margin-top: 40px; }
+    </style>
+</head>
+
+<body> 
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="logo3.png" alt="Bit by Byte Logo">
+            </div>
+            <div class="nav-links">    
+                <a href="homepage.html">Home</a>
+                <a href="lesson.html">Lesson</a>
+                <a href="arcade.html">Arcade</a>
+            </div>
+        </nav>
+    </header> 
+
+    <div class="full-banner scroll-anim">
+        <img src="foundations" alt="Foundations Banner">
+    </div>
+
+    <h1 class="scroll-anim">Foundations of Computing</h1>
+     
+    <main class="container">
+        <section>
+            <p class="scroll-anim" style="text-align: center;">
+                Understanding the core ideas that power every digital world. Discover CS majors, 
+                number systems, and the flow of data and information.
+            </p>
+        </section>
+
+        <section>
+            <h3 class="scroll-anim">Byte-sized Learning</h3>
+            <p class="scroll-anim">
+                No confusing jargon, just clear explanations and helpful guides where learning feels 
+                more like exploring.
+            </p>
+            <a href="text.html">
+                <img src="lesson.png" alt="Read Lessons" class="content-img scroll-anim">
+            </a>
+        </section>
+
+        <section>
+            <h3 class="scroll-anim">Moving Lessons</h3>
+            <p class="scroll-anim">
+                Have trouble reading? We got you covered. Watch your lessons instead of reading them 
+                for your convenience.
+            </p>
+            <a href="video.html">
+                <img src="video.png" alt="Watch Lessons" class="content-img scroll-anim">
+            </a>
+        </section>
+    </main>
+
+</body>
+</html>

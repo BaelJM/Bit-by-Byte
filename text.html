@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bit by Byte | Computer Science</title> 
+
+    <style>
+        :root {
+            --primary-orange: #ca5618;
+            --dark-blue: #0b0646;
+            --bg-light: #faf9f6;
+            --nav-bg: #d8dced;
+            --text-gray: #333;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            font-family: 'Times New Roman', Times, serif;
+            line-height: 1.6;
+            color: var(--dark-blue);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 4px solid #dda045;
+            background-color: var(--nav-bg);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 0 5%;
+            height: 90px;
+        }
+
+        #logo {
+            width: 90px;
+            height: auto;
+        }
+
+        .nav-links a {
+            margin-left: 30px;
+            font-size: 18px;
+            text-decoration: none;
+            color: var(--dark-blue);
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover { color: var(--primary-orange); }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        h4 {
+            font-size: 28px;
+            margin: 40px 0 20px 0;
+            color: var(--dark-blue);
+            border-left: 5px solid var(--primary-orange);
+            padding-left: 15px;
+        }
+
+        h5 {
+            font-size: 22px;
+            margin: 30px 0 15px 0;
+            color: var(--primary-orange);
+        }
+
+        p {
+            text-align: justify;
+            margin-bottom: 20px;
+            font-size: 18px;
+            color: var(--text-gray);
+        }
+
+        .image-box {
+            text-align: center;
+            margin: 30px 0;
+            padding: 15px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .image-box img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+
+        .image-box i {
+            display: block;
+            font-size: 14px;
+            color: #777;
+            margin-top: 10px;
+        }
+
+        .discipline-section {
+            background: #fff;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+             border-top: 3px solid var(--primary-orange);
+        }
+
+        .process-list {
+            list-style: none;
+            margin-bottom: 30px;
+        }
+
+        .process-list li {
+            background: #fff;
+            margin-bottom: 10px;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .btn-next {
+            display: inline-block;
+            background-color: var(--primary-orange);
+            color: white;
+            padding: 12px 40px;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: all 0.3s;
+            margin-top: 20px;
+        }
+
+        .btn-next:hover {
+            background-color: var(--dark-blue);
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            .navbar { flex-direction: column; height: auto; padding: 15px; }
+            .nav-links { margin-top: 15px; }
+            .nav-links a { margin: 0 10px; font-size: 16px; }
+        }
+    </style>
+</head>
+
+<body> 
+    <header>
+        <nav class="navbar">
+            <img id="logo" src="logo3.png" alt="Bit by Byte Logo">
+            <div class="nav-links">    
+                <a href="homepage.html">Home</a>
+                <a href="lesson.html">Lesson</a>
+                <a href="arcade.html">Arcade</a>
+            </div>
+        </nav>
+    </header> 
+
+    <main class="container">
+        <h4>Computer Science as a Discipline</h4>
+        <p>
+            Computer science encompasses far more than programming. For example, designing hardware, formulating system architectures, designing operating system layers, structuring 
+            a database for a specific application, and validating models belong to the discipline, but are not programming.
+            Computer science is concerned with producing useful things such as microprocessors, software, and databases. 
+        </p>
+
+        <p>
+            Its foundations can be traced back to the 19th century, beginning with Charles Babbage’s Analytical Engine. In 1847, George Boole introduced Boolean algebra, a system of logic built on binary values, which later became essential to digital computation.
+        </p>
+
+        <h4>Computing Discipline and Majors</h4>
+        <p>
+            Computing has become one of the most influential domains of the modern world, shaping how people communicate, work, learn, and solve problems. This demand led to the emergence of computing as a formal field of study, eventually branching into specialized disciplines with distinct goals and methods.
+        </p>
+
+        
+
+        <div class="discipline-section">
+            <p><b>Computer Science</b> centers on the theories and principles behind computation. It explores algorithms, data structures, and the mathematical foundations of computing. Principal areas include artificial intelligence, computer systems and networks, and theory of computing.</p>
+        </div>
+
+        <div class="discipline-section">
+            <p><b>Computer Engineering</b> merges computing with electronics. It deals with digital logic, microprocessors, and the physical design of computing devices. It sits between the hardware of electrical engineering and the software of computer science.</p>
+        </div>
+
+        <div class="discipline-section">
+            <p><b>Software Engineering</b> deals with the design, development, testing, and maintenance of software applications. It focuses on software lifecycles, quality assurance, and collaborative teamwork.</p>
+        </div>
+
+        <div class="discipline-section">
+            <p><b>Information Systems</b> concentrates on how organizations use technology to support business processes. It blends computing, business, and management to solve problems for companies and society.</p>
+        </div>
+
+        <div class="discipline-section">
+            <p><b>Information Technology</b> is centered on the deployment, management, and support of computing infrastructure (CPUs, networks, cloud platforms). IT professionals ensure that systems work well for all users.</p>
+        </div>
+
+        <h4>Data, Information, and Information Systems</h4>
+        <h5>What is Data?</h5>
+        <p>Data represents raw elements or unprocessed facts. When collected and observed without interpretation, these elements remain discrete and disorganized entities lacking inherent meaning.</p>
+
+        <div class="image-box">
+            <img src="dikw" alt="DIKW Pyramid Diagram">
+            
+            <i>Source: datacamp</i>
+        </div>
+
+        <h5>Converting Data to Information</h5>
+        <ul class="process-list">
+            <li><b>Processing:</b> Cleaning and preparing data by removing duplicates and errors.</li>
+            <li><b>Organizing:</b> Structuring data into databases or categories to facilitate understanding.</li>
+            <li><b>Interpreting:</b> Uncovering patterns and trends to derive meaningful conclusions.</li>
+            <li><b>Structuring:</b> Presenting information in concise formats like dashboards or reports.</li>
+        </ul>
+
+        <p>Ready to look inside a computer? Learn more in the next lesson.</p>
+        
+        <a href="hardware.html" class="btn-next">Next: Hardware Basics</a>
+    </main>
+</body>
+</html>
